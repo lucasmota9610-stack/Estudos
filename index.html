@@ -36,11 +36,38 @@
     </div>
   </section>
 
+  <!-- BLOCO DE QUESTÕES/ACERTOS -->
+  <section class="panel">
+    <div class="row" style="gap:8px; align-items:flex-end; flex-wrap:wrap">
+      <div style="flex:1">
+        <label class="small">Matéria</label>
+        <select id="qMateria" style="width:100%; padding:10px; border:1px solid #ddd; border-radius:10px"></select>
+      </div>
+      <div>
+        <label class="small">Questões feitas</label>
+        <input id="qFeitas" type="number" min="0" placeholder="0"
+               style="width:120px; padding:10px; border:1px solid #ddd; border-radius:10px">
+      </div>
+      <div>
+        <label class="small">Acertos</label>
+        <input id="qAcertos" type="number" min="0" placeholder="0"
+               style="width:100px; padding:10px; border:1px solid #ddd; border-radius:10px">
+      </div>
+      <button id="qAdd" class="btn">Registrar</button>
+    </div>
+
+    <div class="row">
+      <div>Hoje: <strong id="qHoje">0/0 • 0%</strong></div>
+      <div>Semana: <strong id="qSemana">0/0 • 0%</strong></div>
+    </div>
+  </section>
+
   <main id="lista" class="grid"></main>
 
   <footer class="foot">Dados salvos no seu aparelho (localStorage). PWA instalável.</footer>
 
   <script src="./app.js"></script>
+  <script src="./quiz.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
