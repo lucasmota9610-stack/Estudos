@@ -1,0 +1,20 @@
+*{box-sizing:border-box}body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#f6f6f6;color:#111}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:12px;background:#fff;border-bottom:1px solid #eaeaea;position:sticky;top:0}
+.topbar h1{margin:0;font-size:20px}.muted{margin:0;color:#666;font-size:12px}
+.actions{display:flex;gap:8px}.actions button,.import-label span{border:1px solid #ddd;background:#fff;padding:8px 10px;border-radius:10px;font-size:14px}
+.panel{margin:12px;padding:12px;border-radius:12px;background:#fff;border:1px solid #eee;display:flex;flex-direction:column;gap:12px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:14px}
+.add input{flex:1;padding:10px;border:1px solid #ddd;border-radius:10px}
+.add button{padding:10px 12px;border-radius:10px;border:1px solid #ddd;background:#fff}
+.progress{width:100%;height:8px;background:#e5e5e5;border-radius:999px;overflow:hidden}
+.progress #bar{height:8px;background:#111;width:0%}
+.grid{display:grid;grid-template-columns:1fr;gap:12px;margin:12px}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.grid{grid-template-columns:1fr 1fr 1fr}}
+.card{background:#fff;border:1px solid #eee;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:10px}
+.card h2{margin:0;font-size:16px}.small{color:#666;font-size:12px}
+.row-btns{display:flex;gap:8px}
+.btn{padding:10px 12px;border-radius:10px;border:1px solid #ddd;background:#fff}
+.badge{font-size:12px;border:1px solid #ddd;border-radius:999px;padding:4px 8px}
+.badge.ok{background:#111;color:#fff;border-color:#111}
+.foot{padding:20px;text-align:center;color:#777;font-size:12px}
